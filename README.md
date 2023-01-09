@@ -14,8 +14,6 @@ npm install svelte-wheel --save-dev
 
 ## Basic usage
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
-
 ```
 <script>
   import { SvelteWheel, SvelteWheelMenu, SvelteWheelMenuItem } from 'svelte-wheel'
