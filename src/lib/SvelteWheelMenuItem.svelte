@@ -10,7 +10,7 @@ const dispatchClick = () => {
 
 </script>
 <li class:vertical={orientation === 'vertical'}>
-	<a href="#" on:click={dispatchClick}>
+	<a href="javascript:void(0);" on:click={dispatchClick}>
 		<span class="placement">
 			<slot />
 		</span>
@@ -33,6 +33,7 @@ li
 		align-items center
 		background-color var(--svelte-wheel-color)
 		color var(--svelte-wheel-text-color)
+		cursor pointer
 		display grid
 		height 100%
 		text-decoration none

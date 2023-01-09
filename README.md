@@ -45,7 +45,9 @@ npm install svelte-wheel --save-dev
 
 ### SvelteWheelMenu
 
-> Must have `slot="menu"`
+> Must have `slot="menu"` attribute
+
+> May contain an element with `slot="close"` for a custom close icon
 
 | Prop               | Type            | Required | Values
 | :----------------- | :-------------- | :------- | :----------------------------------
@@ -58,4 +60,22 @@ npm install svelte-wheel --save-dev
 
 ## Styling
 
-Coming soon...
+> You may style your Svelte Wheels using css variables. You may also use `--svelte-wheel-color-(1-50)` and `--svelte-wheel-color-hover-(1-50)`. Priority given to css variables are `--svelte-wheel-color-n` -> `--svelte-wheel-color-odd|even` -> `--svelte-wheel-color`.
+
+Defaults
+
+```
+--svelte-wheel-size: 200px
+
+--svelte-wheel-text-color: rgba(255,255,255,.9)
+
+--svelte-wheel-color: rgba(92, 0, 184, .5)
+--svelte-wheel-color-hover: rgb(58, 0, 116)
+--svelte-wheel-color-odd: rgb(109, 0, 218)
+--svelte-wheel-color-odd-hover: rgb(58, 0, 116)
+--svelte-wheel-color-even: rgb(92, 0, 184)
+--svelte-wheel-color-even-hover: rgb(58, 0, 116)
+
+--svelte-wheel-close-size: 50px
+--svelte-wheel-close-color: rgb(135,14,255)
+```

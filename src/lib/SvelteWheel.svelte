@@ -56,11 +56,11 @@ const clickOutside = (node) => {
 	{#if opened}
 		<div class="menu" transition:scale="{{duration: 300, delay: 50, opacity: 0.5, start: .01, easing: bounceInOut}}" use:centerOnOpen>
 			<slot name="menu" />
-			<div class="close" on:click={closeWheel}>
+			<button class="close" type="button" on:click={closeWheel}>
 				<slot name="close">
 					<span>&times;</span>
 				</slot>
-			</div>
+			</button>
 		</div>
 	{/if}
 </div>
@@ -86,7 +86,9 @@ const clickOutside = (node) => {
 		user-select none
 		z-index 1000
 	.close
+		appearance auto
 		background-color var(--svelte-wheel-close-color)
+		border none
 		border-radius 100%
 		color var(--svelte-wheel-text-color)
 		cursor pointer
